@@ -26,7 +26,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onSellStockClick(View view){
-
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setClassName("edu.pitt.cs1699.stocks", "edu.pitt.cs1699.stocks.SellShares");
+        startActivity(intent);
     }
 
     public void onStartServiceClick(View view){
