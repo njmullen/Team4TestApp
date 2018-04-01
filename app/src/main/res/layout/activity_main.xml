@@ -9,5 +9,79 @@
     android:orientation="vertical">
 
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="29dp" />
 
+    <Button
+        android:id="@+id/broadcastButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBroadcastClick"
+        android:text="Send Broadcast" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sends a broadcast that randomly changes the value of the user's balance"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="19dp" />
+
+    <Button
+        android:id="@+id/buyStockButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onBuyStockClick"
+        android:text="Buy Stock Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sends an Intent to the Buy Stocks activity, which purchaes an amount of stocks for the user"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23dp" />
+
+    <Button
+        android:id="@+id/sellStockButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onSellStockClick"
+        android:text="Sell Stock Activity" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sends an Intent to the Sell Stocks activity, which sells an amount of stocks for the user"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="23dp" />
+
+    <Button
+        android:id="@+id/serviceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onStartServiceClick"
+        android:text="Start Service" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Starts a Service that randomly changes the value of the current share price"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
 </LinearLayout>
