@@ -1,5 +1,6 @@
 package edu.pitt.cs1699.team4testapp;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -19,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onBuyStockClick(View view){
-
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.setClassName("edu.pitt.cs1699.stocks", "edu.pitt.cs1699.stocks.BuyShares");
+        startActivity(intent);
     }
 
     public void onSellStockClick(View view){
