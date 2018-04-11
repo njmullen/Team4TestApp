@@ -32,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onStartServiceClick(View view){
-
+        System.err.println("SS");
+        Intent intent = new Intent(this, StockPriceService.class);
+        startService(intent);
     }
 
 }
