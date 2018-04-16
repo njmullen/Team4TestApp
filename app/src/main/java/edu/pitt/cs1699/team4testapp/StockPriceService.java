@@ -13,7 +13,6 @@ public class StockPriceService extends IntentService {
     }
 
     public int onStartCommand(Intent intent, int flags, int start){
-        System.err.println("ON START");
         Intent newIntent = new Intent(Intent.ACTION_MAIN);
         newIntent.setClassName("edu.pitt.cs1699.stocks", "edu.pitt.cs1699.stocks.StockPriceChangeActivity");
         startActivity(newIntent);

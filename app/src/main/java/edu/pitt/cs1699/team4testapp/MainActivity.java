@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onStartServiceClick(View view){
-        System.err.println("SS");
-        Intent intent = new Intent(this, StockPriceService.class);
+        Intent intent = new Intent("edu.pitt.cs1699.stocks.StockPriceService");
+        intent.setComponent(new ComponentName("edu.pitt.cs1699.stocks", "edu.pitt.cs1699.stocks.StockPriceService"));
         startService(intent);
     }
 
