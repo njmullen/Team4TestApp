@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onBroadcastClick(View view){
         Intent finishedIntent = new Intent("edu.pitt.cs1699.stocks.BALANCE");
+        finishedIntent.setPackage("edu.pitt.cs1699.stocks");
         sendBroadcast(finishedIntent);
     }
 
